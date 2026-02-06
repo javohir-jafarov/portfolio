@@ -6,7 +6,6 @@ import NotFoundPage from './pages/NotFoundPage.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import About from './pages/About'
 import Projects from './pages/Projects.jsx'
-import Contact from './pages/Contact.jsx'
 
 
 const router = createBrowserRouter([
@@ -14,7 +13,6 @@ const router = createBrowserRouter([
   {path: '/', element: <App />},
   {path: '/about', element: <About />},
   {path: '/projects', element: <Projects />},
-  {path: '/contact', element: <Contact />},
 ])
 
 createRoot(document.getElementById('root')).render(

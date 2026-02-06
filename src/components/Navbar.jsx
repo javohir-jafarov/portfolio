@@ -6,7 +6,6 @@ const links = [
     { txt: 'Home', link: '/' },
     { txt: 'About', link: '/about' },
     { txt: 'Projects', link: '/projects' },
-    { txt: 'ContactMe', link: '/contact' }
 ]
 
 const Navbar = () => {

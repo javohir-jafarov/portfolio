@@ -5,9 +5,14 @@ import AboutMain from '../components/AboutMain'
 import Skills from '../components/Skills'
 import profile from '../assets/images/profile.webp'
 
+const start = new Date("2024/05/23")
+const current = new Date()
+
+const yearOfExperience = Math.round((current - start) / (1000 * 60 * 60 * 24 * 365))
+
 const About = () => {
   const forAbout = [
-    {title: 'Know about Me', image: profile, description: "Hello! I'm Javohir, a passionate front-end developer with a knack for creating engaging and user-friendly web experiences. With a strong foundation in HTML, CSS, and JavaScript, I specialize in building responsive and dynamic websites that captivate users. My journey in web development has been fueled by a love for design and a commitment to staying updated with the latest industry trends. When I'm not coding, you'll find me exploring new technologies or contributing to open-source projects. Let's connect and create something amazing together!"}
+    {title: 'Know about Me', image: profile, description: `Hello! My name is Javohir. I am a frontend developer with ${yearOfExperience} years of experience, the leader of the “Ustoz AI” direction at the Zargarlik MFY children's organization. I am currently developing myself and learning new technologies. I completed the programming course at 'teamit' academy with the help of my teacher Abdurahmon. If you subscribe to my channel, you can learn more about me and receive news.`}
   ]
   return (
     <>
